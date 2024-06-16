@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COFFEE SHOP</title>
+    <!-- css file link  -->
+
+    <link rel="stylesheet" href="pro3.css">
+
+    <!-- css bootstrap link  -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- google font link  -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bree+Serif&family=Poppins:ital,wght@1,300&family=Roboto:ital,wght@0,100;0,400;0,700;1,300&display=swap" rel="stylesheet"> 
+
+    <!-- cdn font awesome icons link  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+      /* https://www.greengeeks.com/agency-partners/wp-content/uploads/2020/08/logo-coffee-1-298x300.png
+
+font-family: 'Anton', sans-serif;
+font-family: 'Bree Serif', serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather', serif;
+}
+
+.all-content{
+    background-color: #f7f5f2;
+
+} 
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: green;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar{
+    width: 10px;
+}
+
+/* navbar start  */
+
+#navbar{
+    background-color: #b2744c;
+}
+
+#logo img{
+    border-radius: 10px;
+    width: 40px;
+    margin-left: 40px;
+}
+
+.navbar-nav{
+    margin-left: 50px;
+}
+
+.nav-item .nav-link{
+    color: black;
+    margin-left: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav-item .nav-link:hover{
+    background: #f7f5f2;
+    border-radius: 12px;
+    color: black;
+}
+
+#navbar form button{
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+/* home section style  */
+
+#home{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://wallpapercave.com/wp/wp6751471.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 88%;
+}
+
+#home .content{
+    padding-top: 210px;
+    margin-left: 56px;
+}
+
+#home .content h3{
+    font-size: 50px;
+    color: white;
+}
+
+#home .content p{
+    margin-top: 10px;
+    color: white;
+}
+
+#btn{
+    width: 150px;
+    height: 36px;
+    margin-top: white;
+    border-radius: 5px;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background: #b2744c;
+    color: white;
+}
+
+/* home section end  */
+
+/* about section start  */
+
+
+#about{
+    width: 100%;
+    height: 100vh;
+}
+
+#about .container{
+    padding-top: 70px;
+}
+
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading span{
+    color: #b2744c;
+}
+
+
+#about .card{
+    border-radius: 10px;
+}
+#about .card img{
+    border-radius: 15px;
+}
+
+
+#about-btn{
+    width: 200px;
+    height: 36px;
+    background: transparent;
+    border: 2px solid #b2744c;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.5s;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#about-btn:hover{
+    background-color: #b2744c;
+    color: white;
+}
+
+@media screen and(max-width: 982px)
+{
+    #about p{
+        font-size: 8px;
+    }
+}
+
+@media screen and(max-width: 766px)
+{
+    #about p{
+        font-size: 15px;
+    }
+    #about{
+        height: 100vh;
+    }
+}
+
+@media screen and(max-width: 750px)
+{
+    #about #div2{
+        margin-top: 7px;
+    }
+}
+
+/* about section end  */
+
+
+
+/* Top card start  */
+
+#top-cards{
+    width: 100%;
+    /* height: 60vh; */
+    background: #f7f5f2;
+}
+
+.heading2{
+    margin-bottom: 20px;
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.heading2 span{
+    color: #b2744c;
+}
+
+#top-cards .container{
+    margin-top: 30px;
+}
+
+#top-cards .card{
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#top-cards .card img{
+    border-radius: 10px;
+}
+
+#top-cards .card:hover{
+    transform: translatey(-10px);
+}
+
+
+/* menu start  */
+
+
+#menu{
+    width: 100%;
+}
+
+.heading3{
+    text-align: center;
+    font-size: 30px;
+    color: #b2744c;
+    font-weight: bold;
+    border-bottom: 2px solid #b2744c;
+}
+
+#container2{
+    margin-top: 20px;
+}
+
+/* product section start  */
+
+
+#product{
+    width: 100%;
+
+}
+
+.heading4{
+    text-align: center;
+    color: #b2744c;
+    font-size: 30px;
+    padding-top: 130px;
+    border-bottom: 2px solid #b2744c;
+}
+
+#container3{
+    margin-top: 30px;
+}
+
+#product h3{
+    text-align:  center;
+    color: #b2744c;
+    font-size: 23px;
+}
+
+#product p{
+    color: #b2744c;
+    padding-top: 10px;
+}
+
+#product p span{
+    float: right;
+    cursor: pointer;
+}
+
+
+
+/* product section end  */
+
+
+
+/* our gallery start  */
+
+
+
+#gallery{
+    width: 100%;
+}
+
+.heading5{
+    font-size: 40px;
+    text-align: center;
+    color: black;
+    margin-top: 60px;
+    font-weight: bold;
+}
+
+#gallery .heading5 span{
+    color: #b2744c;
+    font-size: 40px;
+}
+
+
+#gallery .card{
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+#gallery .card img{
+    border-radius: 10px;
+}
+
+
+/* our gallery end  */
+
+
+
+
+/* contact start  */
+
+
+#contact{
+    width: 100%;
+    height: 100vh;
+    padding-top: 70px;
+}
+
+#contact .container{
+    width: 100%;
+    height: 80vh;
+    background: linear-gradient(90deg, white 80%, #b2744c 20%);
+    border-radius: 10px;
+}
+
+.heading6{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.heading6 span{
+    color: #b2744c;
+}
+
+#contact p{
+    font-weight: bold;
+    font-size: 15px;
+    color: black;
+}
+
+#contact input{
+    width: 360px;
+    border: none;
+    border-bottom: 1px solid #b2744c;
+}
+
+#contact-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    background-color: #b2744c;
+    color: white;
+    font-weight: bold;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#col{
+    width: 40%;
+    height: 56vh;
+    background-color: black;
+    margin-top: 78px;
+}
+
+#contact h1{
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#contact #col p{
+    font-size: 15px;
+    color: white;
+    margin-left: 13px;
+    margin-top: 30px;
+}
+
+
+@media screen  and (max-width: 766px){
+    #contact .container{
+        background: white;
+    }
+    #col{
+        width: 100%;
+        background: #b2744c;
+    }
+    #contact{
+        height: 150vh;
+    }
+}
+
+/* contact end  */
+
+
+
+/* blog sstart  */
+
+
+#blogs{
+    width: 100%;
+}
+
+#blogs .heading7{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+#blogs .heading7 span{
+    color: #b2744c;
+}
+
+#blogs .container{
+    margin-top: 60px;
+}
+
+#blogs h5{
+    color: #b2744c;
+}
+
+#blog-btn{
+    width: 200px;
+    height: 36px;
+    border: none;
+    color: white;
+    background: #b2744c;
+    cursor: pointer;
+}
+
+/* blog end  */
+
+
+/* footer start  */
+
+
+#footer{
+    width: 100%;
+    background-color: #b2744c;
+    margin-top: 50px;
+}
+
+.footer-logo img{
+    width: 180px;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+#footer .social-links i{
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.credits{
+    color: white;
+    margin-top: 20px;
+    text-shadow: 0px 0px 1px black;
+}
+
+.credits a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+#credits a span{
+    color: black;
+}
+
+.copyright span{
+    color: black;
+}
+
+
+    </style>
+
+
+</head>
+<body>
+    
+
+<div class="all-content">
+
+    <!-- navbar start-->
+
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#" id="logo">
+            <img src="https://www.greengeeks.com/agency-partners/wp-content/uploads/2020/08/logo-coffee-1-298x300.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>
+                <i class="fa-solid fa-bars" style="color: white; font-size: 23px;"></i>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Product</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#blogs">Blogs</a>
+              </li>
+
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- navbar end  -->
+
+
+
+
+      <!-- home section start  -->
+
+      <section id="home">
+        <img src="coffee1.jpg" alt="">
+        <div class="content">
+          <h3>
+            Start Your Day With a <br> Fresh Coffee 
+          </h3>
+          <p>
+            We spend inordinately long making coffee that is as good as it can be in every single cup.
+            <br>
+            Pick from a great range of coffees and merchandise on our shop
+          </p>
+          <button id="btn">
+            Shop Now
+          </button>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- home section end  -->
+
+
+      <!-- about section start  -->
+
+      <section id="about">
+        <div class="container">
+          <div class="heading">
+            About <span>Us</span>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.9y9wNaOacjvQn7Ap92vJ-AHaEK&pid=Api&P=0&h=220" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-6" id="div2">
+              <h3>
+                What Makes Our Coffee Special
+              </h3>
+              <p>
+                The quality of your coffee depends on a variety of factors, including soil and altitude. Different methods of roasting can lead to varying results. For example, a slow roast will lead to a more soluble substance. Roasting coffee to the right temperature is a crucial step in the production process.
+                Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.
+                <br>
+                <br>
+                <button id="about-btn"> Laern More</button>
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      <br>
+      <br><br><br><br><br>
+
+
+
+
+
+      <!-- about section end  -->
+
+
+
+      <!-- top card start  -->
+
+
+      <section id="top-cards">
+        <div class="heading2">
+          Top <span>Categories</span>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 py-4 py-md-0">
+              <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU45TeAZiKzPBTY_NQGD0a2nPTa2WFNoBsLw&s" height="250px" alt="">
+              </div>
+            </div>
+  
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.ceGbTJIrj6ajM2XlsyFXAwHaE7&pid=Api&P=0&h=220" height="250px" alt="">
+              </div>
+            </div>
+  
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.4GIZXkxiOdUK9zjujXqB1AHaEo&pid=Api&P=0&h=220" height="250px" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- top card end  -->
+
+
+      <!-- menu start  -->
+
+      <section id="menu">
+        <div class="container">
+          <div class="heading3">
+            Menu 
+          </div>
+        </div>
+
+        <div class="container" di="container2">
+          <div class="row">
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.FaoahGL9zZvbMMlu13nLCQHaF4&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $95 <strike>$110</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.AIdbayeQqp9PLufahBKmggHaGt&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $85 <strike>$105</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.oFFS5hvvWPNIKWLNzS0RGAHaF_&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $35 <strike>$70</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.I70m3LuzbEM1U6JdEGCEMwHaE_&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $75 <strike>$105</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.gIP7U8MDAJEPI-vsF6wNRQAAAA&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $92 <strike>$120</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.9Dm5HcN67r2ozWQEfjKV_QHaHa&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $103 <strike>$130</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.8kmZU8Wq_MBcibfzEpCoNQAAAA&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $54 <strike>$70</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.FaoahGL9zZvbMMlu13nLCQHaF4&pid=Api&P=0&h=220" height="122px" alt="">
+                <div class="card-body">
+                  <div class="star text-center">
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                  </div>
+                  <h3>
+                    Coffee 
+                  </h3>
+                  <p>
+                    $70 <strike>$90</strike> <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+
+      <!-- menu end  -->
+
+
+      <!-- Product section start  -->
+
+
+      <section id="product">
+        <div class="container">
+          <div class="heading4">Products</div>
+        </div>
+
+        <div class="container" id="container3">
+          <div class="row">
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.fPeBEDxe89IOk2QVlRmVRwHaID&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Arabic coffee</h3>
+                  <p>
+                    $120 <strike>$150</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.wdhJwc3s2-Pm2kc6ImmIDwHaHa&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Indian coffee</h3>
+                  <p>
+                    $140 <strike>$170</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://www.roasterycoffee.co.in/cdn/shop/files/chocolate_cover_photo.jpg?v=1642153994" height="160px" alt="">
+                <div class="card-body">
+                  <h3>American coffee</h3>
+                  <p>
+                    $230 <strike>$400</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://www.roasterycoffee.co.in/cdn/shop/products/roastery-espresso-milk-blend1-scaled.jpg?v=1634210318" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Bengoli coffee</h3>
+                  <p>
+                    $120 <strike>$180</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.bLqn1MN6mQ0eAzX4-tJv-AHaFv&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Canadian coffee</h3>
+                  <p>
+                    $320 <strike>560</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.9xSoLIhQllwGtlUUSe3WqwHaHa&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Arabic coffee</h3>
+                  <p>
+                    $150 <strike>$190</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.g8m27i7I1vdbBapUT77wbwHaHa&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Indian coffee</h3>
+                  <p>
+                    $160 <strike>$210</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.W5CszHZi1gYbi42h8JKh3wHaEh&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Pakistani coffee</h3>
+                  <p>
+                    $170 <strike>$210</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.BYEahFH47yXVWsOF1fqwDwHaHa&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Bihari coffee</h3>
+                  <p>
+                    $100 <strike>$120</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.ek1bOwrE1Esh6d1ms7F99wHaE8&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Arabic coffee</h3>
+                  <p>
+                    $190 <strike>$240</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.hYxD2Qyzn_lPTv0YvurwgwHaNW&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Arabic coffee</h3>
+                  <p>
+                    $120 <strike>$190</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="col-md-3 py-3 py-3">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.yW6kQEouAskGXXJUHfLzwAHaE8&pid=Api&P=0&h=220" height="160px" alt="">
+                <div class="card-body">
+                  <h3>Arabic coffee</h3>
+                  <p>
+                    $120 <strike>$150</strike>
+                    <span class="fa-solid fa-cart-shopping"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- Product section end  -->
+
+
+
+      <!-- our Gallery start-->
+
+
+      <div class="container" id="gallery">
+        <div class="heading5">
+          Our <span>Gallery</span>
+        
+          <div class="row" style="margin-top: 30px;">
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.psd5R_XOivyvDEqNdYoUzQHaE8&pid=Api&P=0&h=220" height="230px" alt="">
+              </div>
+            </div>
+
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.uBOmo3pBzn2oLIB7Ppw40QHaE8&pid=Api&P=0&h=220" height="230px" alt="">
+              </div>
+            </div>
+
+
+            <div class="col-md-4  py-3 py-md-0 mb-lg-4">
+              <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.PhTBdb2ULwh6PVllCp3p0AHaE8&pid=Api&P=0&h=220" height="230px" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.T04OPQL7U_1-_oX2L1gjygHaE7&pid=Api&P=0&h=220" height="230px" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="data:image/jpeg;base64,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" height="230px" alt="">
+              </div>
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+              <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.po8p_Ir38grzV78xgvuFvQHaE8&pid=Api&P=0&h=220" height="230px" alt="">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+
+      <!-- our Gallery end  -->
+
+
+      <!-- contact start  -->
+
+
+      <section id="contact">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-7">
+              <div class="heading6">
+                Contact <span>Us</span>
+              </div>
+              <p>
+                Fill your inforamtion and through this information my team will contact <br> with you, Warm welcome and Thank you.
+              </p>
+
+              <input type="text" class="form-control" placeholder="Name" aria-label="defual input example"><br>
+              <input type="email" class="form-control" placeholder="Email" aria-label="defual input example"><br>
+              <input type="number" class="form-control" placeholder="Contact number" aria-label="defual input example"><br>
+              <button id="contact-btn">Send Message</button>
+
+
+            </div>
+
+
+            <div class="col-md-5" id="col">
+
+              <h1>Info</h1>
+              <p><i class="fa-regular fa-envelope"></i> &nbsp;&nbsp;adityaray539@gmail.com</p>
+              <p><i class="fa-solid fa-phone"></i> &nbsp;&nbsp;+91-9508549987</p>
+              <p><i class="fa-solid fa-building-columns"></i>&nbsp;&nbsp;Patna(Bihar)</p>
+              <p>
+                This is personal information. If you have any query, you can directly contact with me.
+              </p>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- contact end  -->
+
+
+
+      <!-- blogs start  -->
+
+      <section id="blogs">
+        <div class="heading7">Latest <span>Blogs</span></div>
+        
+        <div class="container">
+
+          <div class="row">
+
+
+            <div class="col-md-4 py-3 py-md-0">
+
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.5HRtxUKvwsm1ZeTENGZJ2AHaE7&pid=Api&P=0&h=220" height="230px" alt="">
+                <div class="card-body">
+                  <h3>Team Blog</h3>
+                  <h5>Team Member / 8 june 2024</h5>
+                  <p>
+                    Coffee shop employees don't just keep the espresso machines running. They're responsible for maintaining customer relations, communicating vast product knowledge, perfecting the art of coffee-making, and so much more. So, finding the right team of employees can make all the difference in your shop's success.
+                  </p>
+                  <button id="blog-btn">Read More.</button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.5HRtxUKvwsm1ZeTENGZJ2AHaE7&pid=Api&P=0&h=220" height="230px" alt="">
+                <div class="card-body">
+                  <h3>Cooking Blog</h3>
+                  <h5>Chef / 15 april 2024</h5>
+                  <p>
+                    Coffee is a beverage brewed from the roasted and ground seeds of the tropical evergreen coffee plant. Coffee is one of the three most popular beverages in the world (alongside water and tea), and it is one of the most profitable international commodities.However, a high-quality coffee flavor.
+                    <br>
+                  <button id="blog-btn">Read More.</button>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-md-4 py-3 py-md-0">
+
+              <div class="card">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.5HRtxUKvwsm1ZeTENGZJ2AHaE7&pid=Api&P=0&h=220" height="230px" alt="">
+                <div class="card-body">
+                  <h3>Director Blog</h3>
+                  <h5>Director / 5 may 2024</h5>
+                  <p>
+                    Responsible for managing the day-to-day store operations, maintaining high store standards and conditions, and fostering a positive environment.A café manager oversees all aspects of a café's operations. This includes: selling food and drinks, hiring and scheduling staff, menu planning, and maintaining inventory.
+                  </p>
+                  <button id="blog-btn">Read More.</button>
+                </div>
+              </div>
+
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </section>
+
+
+
+      <!-- blogs end  -->
+
+
+      <!-- footer start  -->
+
+      <footer id="footer">
+        <div class="footer-logo text-center"><img src="" class="" alt=""></div>
+        <div class="social-links text-center">
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-youtube"></i>
+          <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="credits text-center">
+          Designed By: <a href="#">Aditya Kumar Ray</a>
+        </div>
+
+        <div class="copyright text-center">
+          &copy; Copyright 2024 &nbsp;<strong><span>Aditya Coffee Shop</span></strong>. All Right reserved
+        </div>
+      </footer>
+
+
+      <!-- footer end  -->
+
+      <a href="#" class="arrow">
+        <i><img src="" alt="" width="50px"></i>
+      </a>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+    <!-- javascript bootstrap  link  -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
